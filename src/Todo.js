@@ -20,13 +20,13 @@ export default function TodoListItem({ todo, inprogress, id }) {
         <ListItemText
           primary={todo}
           style= {{color: "blue"}}
-          // secondary={inprogress ? "In Progress" : "Completed"}
+           secondary={inprogress ? "In Progress" : "Completed"}
         />
       </ListItem>
 
-      {/* <Button onClick={toggleInProgress}>
+      {<Button onClick={toggleInProgress}>
         {inprogress ? "Done" : "UnDone"}
-      </Button> */}
+      </Button>}
       <Button onClick={deleteTodo} style={{color: "red"}}>X</Button>
     </div>
   );
